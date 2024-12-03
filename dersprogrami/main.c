@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-struct GunSaatHocaDersSınıf{
+struct GunSaatHocaDersSÃ½nÃ½f{
 
     char* Gun[15];
     int Saat;
     char* Hoca[20];
     char* Ders[30];
-    char* Sınıf[5];
+    char* SÃ½nÃ½f[5];
 
 
 };
-//döngüler için
+//dÃ¶ngÃ¼ler iÃ§in
 
 struct DersSayisi{
     int Maxsayi[15];
@@ -25,7 +25,7 @@ void DersProgramIn{
 
  for(i=0,i<Maxsayi,i++)
     printf("%d.Ders icin gun giriniz",i+1);
-    scanf("%s,",GunSaatHocaDersSınıf.Gun);
+    scanf("%s,",GunSaatHocaDersSÃ½nÃ½f.Gun);
 
 
 
@@ -37,11 +37,11 @@ void DersProgramIn{
 
 void DersProgramOutput{
 
- for (int i = 0; i < GunSaatHocaDersSınıf->DersSayisi; i++) {
+ for (int i = 0; i < GunSaatHocaDersSÃ½nÃ½f->DersSayisi; i++) {
         printf("%s. Ders: %s, Gun: %s, Saat: %s\n",
-               i + 1, GunSaatHocaDersSınıf->dersler[i].dersAdi,
-               GunSaatHocaDersSınıf->dersler[i].gun,
-               GunSaatHocaDersSınıf->dersler[i].saat);
+               i + 1, GunSaatHocaDersSÃ½nÃ½f->dersler[i].Ders,
+               GunSaatHocaDersSÃ½nÃ½f->dersler[i].Gun,
+               GunSaatHocaDersSÃ½nÃ½f->dersler[i].Saat);
 
 
 }
